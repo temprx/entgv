@@ -17,7 +17,7 @@ Docker Hub 地址：https://hub.docker.com/r/daoying007/ulordrig/
 2. [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
 
 
-## 二、方式一：直接使用已编译好的镜像
+## 二、方式一：直接使用已编译的镜像
 
 
 1. 使用 Docker Hub 镜像（国内速度略慢）：
@@ -31,7 +31,7 @@ docker run -d -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1po
 ```
 
 
-## 三、方式一：自己编译好镜像
+## 三、方式一：手动编译镜像
 
 ### 1. 编译镜像
 
