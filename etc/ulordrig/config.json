@@ -1,0 +1,10 @@
+{
+  "threads": {THREADS},
+  "pools": [
+    {
+      "url": "{POOL_ADDRESS}",
+      "user": "{ADDRESS}.{MINER_NAME}",
+      "pass": "{PASS}"
+    }
+  ]
+}
