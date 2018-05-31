@@ -50,7 +50,7 @@ docker run -d -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1po
 ```
 
 
-## 四、注意点
+## 四、查看日志
 
 查看运行日志：
 ```
