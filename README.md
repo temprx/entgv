@@ -19,12 +19,12 @@ Docker Hub 地址：https://hub.docker.com/r/daoying007/ulordrig/
 
 1. 使用 Docker Hub 镜像（国内速度略慢）：
 ```
-docker run -v ~/ulord-pool-redis-data:/var/lib/redis -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e MINER_NAME=daoying007docker --name ulordrig daoying007/ulordrig
+docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig daoying007/ulordrig
 ```
 
 2. 使用 阿里云提供的容器镜像（国内速度较快）：
 ```
-docker run -v ~/ulord-pool-redis-data:/var/lib/redis -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e MINER_NAME=daoying007docker --name ulordrig registry.cn-hangzhou.aliyuncs.com/daoying007/ulordrig
+docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig registry.cn-hangzhou.aliyuncs.com/daoying007/ulordrig
 ```
 
 
@@ -43,7 +43,7 @@ docker build -t ulordrig-docker:latest .
 
 
 ```
-docker run -v ~/ulord-pool-redis-data:/var/lib/redis -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e MINER_NAME=daoying007docker --name ulordrig ulordrig:latest
+docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig ulordrig:latest
 ```
 
 
@@ -60,7 +60,7 @@ docker exec -it ulordrig tail -f /var/log/ulordrig.log
 
 2. 环境变量 `POOL_ADDRESS` 矿池地址，如：`u1pool.com:18888`。
 
-3. 环境变量 `MINER_NAME` 为矿机名，只是方便识别是哪个矿机的算力，可随意填。注意：只能包含字母和数字，不能包含 `-` `_` 之类的符号。
+3. 环境变量 `MINER_NAME` 为矿机名，只是方便识别是哪个矿机的算力，可随意填，直接用默认 `daoying007` 也可。注意：只能包含字母和数字，不能包含 `-` `_` 之类的符号。
 
 4. 环境变量 `THREADS` 为启动进程数，一般同CPU核数即可，如：`4`。
 
