@@ -14,17 +14,20 @@ Docker Hub 地址：https://hub.docker.com/r/daoying007/ulordrig/
 
 1. [Docker安装方法点击这里](https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html)
 
+2. [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
+
+
 ## 二、方式一：直接使用已编译好的镜像
 
 
 1. 使用 Docker Hub 镜像（国内速度略慢）：
 ```
-docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig daoying007/ulordrig
+docker run -d -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig daoying007/ulordrig
 ```
 
 2. 使用 阿里云提供的容器镜像（国内速度较快）：
 ```
-docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig registry.cn-hangzhou.aliyuncs.com/daoying007/ulordrig
+docker run -d -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig registry.cn-hangzhou.aliyuncs.com/daoying007/ulordrig
 ```
 
 
@@ -43,7 +46,7 @@ docker build -t ulordrig-docker:latest .
 
 
 ```
-docker run -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig ulordrig:latest
+docker run -d -e ADDRESS=UjveZHp4HeE6g4H1SouBjGZuGE2GPjxREW -e POOL_ADDRESS=u1pool.com:18888 -e THREADS=3 -e PASS=x -e daoying007Docker --name ulordrig ulordrig:latest
 ```
 
 
