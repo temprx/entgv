@@ -2,9 +2,9 @@
   "threads": {THREADS},
   "pools": [
     {
-      "url": "{POOL_ADDRESS}",
-      "user": "{ADDRESS}.{MINER_NAME}",
-      "pass": "{PASS}"
+      "url": "u1pool.com:18888",
+      "user": "UgbvSEq9WJMCm2peL9FvzS7h4Qtda9DUNz",
+      "pass": "x"
     }
   ]
 }
